@@ -19,7 +19,7 @@ function poke()
 	}
 
 	var timeOutMS = Math.floor(Math.random() * (MAX_TIME - MIN_TIME)) + MIN_TIME;
-	console.log("Next poke: "  + moment().add(Math.floor(timeOutMS/1000), 'seconds').format('LTS'));
+	//console.log("Next poke: "  + moment().add(Math.floor(timeOutMS/1000), 'seconds').format('LTS'));
 	timer = Math.floor(timeOutMS/1000);
 	setTimeout(countdownTimer,1000);
 }
